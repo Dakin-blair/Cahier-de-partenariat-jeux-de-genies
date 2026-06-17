@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cahier de Partenariat — Délégation UQO · Jeux de Génie 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ NAVBAR ═══════════════════════════════════════════ -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="Logo JDG UQO" style="width:38px;height:38px;object-fit:contain;background:rgba(206, 184, 184, 0.95);border-radius:8px;padding:0px;box-sizing:border-box;display:block;">
+      <div class="nav-logo-text">
+        <span class="s1">Délégation UQO</span>
+        <span class="s2">Jeux de Génie 2027</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#jeux">Les Jeux</a></li>
+      <li><a href="#delegation">La Délégation</a></li>
+      <li><a href="#budget">Budget</a></li>
+      <li><a href="#partenariat">Partenariat</a></li>
+      <li><a href="#contacts" class="nav-cta">Nous contacter</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ HERO ═════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" id="s0"></div>
+      <div class="hero-slide" id="s1"></div>
+      <div class="hero-slide" id="s2"></div>
+      <div class="hero-slide" id="s3"></div>
+      <div class="hero-slide" id="s4"></div>
+      <div class="hero-slide" id="s5"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          <span>36e édition · Université Laval · Janvier 2027</span>
+        </div>
+        <h1 class="hero-title">
+          Libère ton<br>
+          <span class="accent">génie.</span>
+          <span class="sub">La délégation UQO aux Jeux de Génie 2027</span>
+        </h1>
+        <p class="hero-desc">23 étudiants en génie de l'UQO représentent l'Outaouais à Québec. Votre soutien transforme l'expérience d'une génération d'ingénieurs.</p>
+        <div class="hero-pills">
+          <div class="pill">🎓 23 participants</div>
+          <div class="pill">📍 Université Laval</div>
+          <div class="pill">🏆 4 disciplines</div>
+          <div class="pill">💼 38 000 $ visés</div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#partenariat" class="btn-primary">Voir les niveaux de partenariat →</a>
+          <a href="#contacts" class="btn-secondary">📄 Télécharger le cahier</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="card-logo">
+          <img src="logo.png" alt="Logo JDG UQO" class="logo-svg-big" style="object-fit:contain;">
+          <div class="card-logo-title">
+            Délégation UQO
+            <span class="t2">Jeux de Génie · Québec · 3–7 janvier 2027</span>
+          </div>
+        </div>
+        <div class="countdown">
+          <div class="countdown-label">⏳ Compte à rebours</div>
+          <div class="countdown-grid">
+            <div class="cd-unit"><div class="cd-number" id="cd-j">000</div><div class="cd-label">Jours</div></div>
+            <div class="cd-unit"><div class="cd-number" id="cd-h">00</div><div class="cd-label">Heures</div></div>
+            <div class="cd-unit"><div class="cd-number" id="cd-m">00</div><div class="cd-label">Min</div></div>
+            <div class="cd-unit"><div class="cd-number" id="cd-s">00</div><div class="cd-label">Sec</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-dots">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+      <button class="dot" data-index="3"></button>
+      <button class="dot" data-index="4"></button>
+      <button class="dot" data-index="5"></button>
+    </div>
+  </section>
+
+  <!-- Barre slogan -->
+  <div class="slogan-bar">
+    <span>Libère ton génie</span><span class="slogan-sep">✦</span>
+    <span>Unleash Your Genius</span><span class="slogan-sep">✦</span>
+    <span>36e Édition · 2027</span><span class="slogan-sep">✦</span>
+    <span>UQO · Outaouais</span><span class="slogan-sep">✦</span>
+    <span>Libère ton génie</span>
+  </div>
+
+  <!-- ══ SECTION 1 — SOMMAIRE ══════════════════════════════ -->
+  <section id="sommaire" class="section section-alt">
+    <div class="container">
+      <div class="section-tag">Sommaire</div>
+      <h2 class="section-title">Ce que contient<br>ce cahier</h2>
+      <p class="section-subtitle">Tout ce que vous devez savoir sur notre délégation et les opportunités de partenariat avec l'UQO pour les Jeux de Génie 2027.</p>
+      <div class="sommaire-grid">
+        <a href="#directeur" class="sommaire-card"><div class="sommaire-num">01</div><div class="sommaire-icon">📝</div><div class="sommaire-name">Mot du directeur</div><div class="sommaire-desc">Un message du directeur du module d'ingénierie, Prof. Halim Boutayeb.</div><div class="sommaire-arrow">Lire →</div></a>
+        <a href="#jeux" class="sommaire-card"><div class="sommaire-num">02</div><div class="sommaire-icon">🏆</div><div class="sommaire-name">Les Jeux & la compétition</div><div class="sommaire-desc">Présentation des Jeux de Génie et des 4 disciplines représentées par l'UQO.</div><div class="sommaire-arrow">Découvrir →</div></a>
+        <a href="#delegation" class="sommaire-card"><div class="sommaire-num">03</div><div class="sommaire-icon">🎓</div><div class="sommaire-name">Profil des participants</div><div class="sommaire-desc">23 étudiants passionnés, futurs ingénieurs de l'Outaouais et du Québec.</div><div class="sommaire-arrow">Explorer →</div></a>
+        <a href="#thematique" class="sommaire-card"><div class="sommaire-num">04</div><div class="sommaire-icon">🎭</div><div class="sommaire-name">Thématique & nos valeurs</div><div class="sommaire-desc">« Libère ton génie » — la thématique 2027 et nos 4 piliers : Inspiration, Partage, Appartenance, Dépassement.</div><div class="sommaire-arrow">Découvrir →</div></a>
+        <a href="#vision" class="sommaire-card"><div class="sommaire-num">05</div><div class="sommaire-icon">💡</div><div class="sommaire-name">Notre vision & nos piliers</div><div class="sommaire-desc">Pourquoi soutenir la délégation UQO — 4 raisons concrètes.</div><div class="sommaire-arrow">En savoir plus →</div></a>
+        <a href="#budget" class="sommaire-card"><div class="sommaire-num">06</div><div class="sommaire-icon">💰</div><div class="sommaire-name">Budget prévisionnel</div><div class="sommaire-desc">Répartition du budget de 61 000 $ — dépenses et sources de revenus.</div><div class="sommaire-arrow">Voir le budget →</div></a>
+        <a href="#partenariat" class="sommaire-card"><div class="sommaire-num">07</div><div class="sommaire-icon">🤝</div><div class="sommaire-name">Grille de partenariat</div><div class="sommaire-desc">7 niveaux de contribution — d'Ami (500 $+) à Présentateur (20 000 $+).</div><div class="sommaire-arrow">Voir les niveaux →</div></a>
+        <a href="#materiel" class="sommaire-card"><div class="sommaire-num">08</div><div class="sommaire-icon">📦</div><div class="sommaire-name">Partenariat matériel</div><div class="sommaire-desc">Contribuez en nature : équipements, restauration, impression, hébergement.</div><div class="sommaire-arrow">Voir les options →</div></a>
+        <a href="#contreparties" class="sommaire-card"><div class="sommaire-num">09</div><div class="sommaire-icon">📋</div><div class="sommaire-name">Tableau des contreparties</div><div class="sommaire-desc">Détail complet des avantages selon votre niveau de contribution.</div><div class="sommaire-arrow">Voir le tableau →</div></a>
+        <a href="#contacts" class="sommaire-card"><div class="sommaire-num">10</div><div class="sommaire-icon">📬</div><div class="sommaire-name">Nous contacter</div><div class="sommaire-desc">Coordonnées des VP Partenariats pour toute question ou confirmation.</div><div class="sommaire-arrow">Contacter →</div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 2 — MOT DU DIRECTEUR ═════════════════════ -->
+  <section id="directeur" class="section">
+    <div class="container">
+      <div class="directeur-grid">
+        <div class="directeur-quote-block">
+          <div class="section-tag">Mot du directeur</div>
+          <h2 class="section-title" style="margin-bottom:36px">Un message du<br>directeur du module</h2>
+          <div class="quote-mark">"</div>
+          <blockquote class="directeur-quote">
+            <p>Les Jeux de Génie représentent bien plus qu'une compétition inter-universitaire. Ils incarnent ce que nous construisons chaque jour à l'UQO : des ingénieurs capables de relever les défis les plus complexes avec créativité, rigueur et esprit d'équipe.</p>
+            <p>En soutenant notre délégation, vous investissez directement dans la prochaine génération d'ingénieurs de l'Outaouais. Votre contribution leur permettra de se mesurer aux meilleures universités du Québec et de revenir enrichis d'expériences uniques.</p>
+            <p>Au nom de l'équipe, je vous remercie chaleureusement pour votre soutien.</p>
+          </blockquote>
+          <div class="directeur-sig">
+            <div class="sig-avatar">HB</div>
+            <div class="sig-info">
+              <div class="name">Prof. Halim Boutayeb</div>
+              <div class="role">Directeur du module de l'ingénierie, UQO</div>
+            </div>
+          </div>
+        </div>
+        <div class="directeur-card">
+          <div class="dir-stat"><div class="dir-stat-num">23</div><div class="dir-stat-label">Étudiants représentant l'UQO</div></div>
+          <div class="dir-divider"></div>
+          <div class="dir-stat"><div class="dir-stat-num">36e</div><div class="dir-stat-label">Édition des Jeux de Génie</div></div>
+          <div class="dir-divider"></div>
+          <div class="dir-badge"><div class="dir-badge-icon">📍</div><div class="dir-badge-text"><strong>Université Laval, Québec</strong>3 – 7 janvier 2027</div></div>
+          <div class="dir-badge"><div class="dir-badge-icon">🏛️</div><div class="dir-badge-text"><strong>Université du Québec en Outaouais</strong>Module de l'ingénierie</div></div>
+          <div class="dir-badge"><div class="dir-badge-icon">💼</div><div class="dir-badge-text"><strong>Budget total : 61 000 $</strong>dont 38 000 $ en partenariats</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 3 — LES JEUX ══════════════════════════════ -->
+  <section id="jeux" class="section section-alt">
+    <div class="container">
+      <div class="jeux-intro">
+        <div class="jeux-text">
+          <div class="section-tag">Les Jeux de Génie</div>
+          <h2 class="section-title">La plus grande compétition de génie au Québec</h2>
+          <p class="section-subtitle">Depuis 1989, les Jeux de Génie rassemblent chaque année les meilleures universités québécoises autour de 4 volets de compétitions : envergure, académiques, culturelles et sportives.</p>
+        </div>
+        <div class="jeux-facts">
+          <div class="fact-card"><div class="fact-num">36e</div><div class="fact-label">Édition en 2027</div></div>
+          <div class="fact-card"><div class="fact-num">15+</div><div class="fact-label">Universités participantes</div></div>
+          <div class="fact-card"><div class="fact-num">500+</div><div class="fact-label">Étudiants en génie</div></div>
+          <div class="fact-card"><div class="fact-num">4</div><div class="fact-label">Volets de compétition</div></div>
+        </div>
+      </div>
+
+      <!-- ── VOLET 1 : COMPÉTITIONS D'ENVERGURE ────────────── -->
+      <div class="volet-block">
+        <div class="volet-header">
+          <div class="volet-titre">🏗️ Compétitions d'envergure <span class="volet-duree">4 mois</span></div>
+          <p class="volet-desc">Les compétitions d'envergure s'étendent sur plusieurs mois et permettent aux participant·es de développer des projets innovants alliant conception, stratégie et collaboration. C'est par le fait même une opportunité en or pour les partenaires de s'impliquer activement à la réalisation de ces projets sur une période de 4 mois !</p>
+        </div>
+        <div class="competitions-grid">
+          <div class="comp-card"><div class="comp-tag">Envergure</div><div class="comp-icon">🚀</div><div class="comp-name">Entrepreneuriale</div><div class="comp-desc">Développement d'une innovation technologique accompagnée d'un plan d'affaires structuré.</div></div>
+          <div class="comp-card"><div class="comp-tag">Envergure</div><div class="comp-icon">🤖</div><div class="comp-name">Machine</div><div class="comp-desc">Conception d'un ou des robots capables de relever des défis techniques sur un parcours défini.</div></div>
+        </div>
+      </div>
+
+      <!-- ── VOLET 2 : COMPÉTITIONS MAJEURES ───────────────── -->
+      <div class="volet-block">
+        <div class="volet-header">
+          <div class="volet-titre">⏱️ Compétitions majeures <span class="volet-duree">6 heures</span></div>
+          <p class="volet-desc">Les compétitions majeures se déroulent lors des Jeux et mettent les participant·es au défi dans des épreuves intensives à durée limitée. Elles mobilisent leurs compétences techniques, leur créativité et leur capacité à performer sous pression.</p>
+        </div>
+        <div class="competitions-grid">
+          <div class="comp-card"><div class="comp-tag">Majeure</div><div class="comp-icon">🏛️</div><div class="comp-name">La Capitale</div><div class="comp-desc">Conception d'une solution multidisciplinaire répondant à un enjeu de génie civil.</div></div>
+          <div class="comp-card"><div class="comp-tag">Majeure</div><div class="comp-icon">🦾</div><div class="comp-name">La Majeure</div><div class="comp-desc">Défi robotique visant à résoudre une problématique complexe.</div></div>
+          <div class="comp-card"><div class="comp-tag">Majeure</div><div class="comp-icon">📊</div><div class="comp-name">Génie Conseil</div><div class="comp-desc">Présentation d'une recommandation technique sur un enjeu actuel devant un jury.</div></div>
+        </div>
+      </div>
+
+      <!-- ── VOLET 3 : COMPÉTITIONS ACADÉMIQUES ────────────── -->
+      <div class="volet-block">
+        <div class="volet-header">
+          <div class="volet-titre">🎓 Compétitions académiques</div>
+          <p class="volet-desc">Les compétitions académiques sont des épreuves théoriques et pratiques portant sur des concepts fondamentaux en ingénierie relevant des domaines du génie chimique, civil, électrique, industriel, informatique et mécanique.</p>
+        </div>
+        <div class="competitions-grid competitions-grid-6">
+          <div class="comp-card"><div class="comp-tag">Académique</div><div class="comp-icon">🧪</div><div class="comp-name">Génie chimique</div></div>
+          <div class="comp-card"><div class="comp-tag">Académique</div><div class="comp-icon">🏗️</div><div class="comp-name">Génie civil</div></div>
+          <div class="comp-card comp-card-uqo"><div class="comp-tag comp-tag-uqo">⭐ Discipline UQO</div><div class="comp-icon">⚡</div><div class="comp-name">Génie électrique</div></div>
+          <div class="comp-card"><div class="comp-tag">Académique</div><div class="comp-icon">🏭</div><div class="comp-name">Génie industriel</div></div>
+          <div class="comp-card comp-card-uqo"><div class="comp-tag comp-tag-uqo">⭐ Discipline UQO</div><div class="comp-icon">💻</div><div class="comp-name">Génie informatique</div></div>
+          <div class="comp-card"><div class="comp-tag">Académique</div><div class="comp-icon">⚙️</div><div class="comp-name">Génie mécanique</div></div>
+        </div>
+      </div>
+
+      <!-- ── VOLET 4 : COMPÉTITIONS CULTURELLES ────────────── -->
+      <div class="volet-block">
+        <div class="volet-header">
+          <div class="volet-titre">🎭 Compétitions culturelles</div>
+          <p class="volet-desc">Les compétitions culturelles proposent des défis ludiques et créatifs qui mettent en valeur l'esprit d'équipe, la spontanéité et l'expression des participant·es. Elles contribuent à créer une ambiance dynamique et rassembleuse au sein des Jeux.</p>
+        </div>
+        <div class="competitions-grid">
+          <div class="comp-card"><div class="comp-tag">Culturelle</div><div class="comp-icon">🧠</div><div class="comp-name">Génie en herbe</div><div class="comp-desc">Un tournoi de culture générale mettant à l'épreuve les connaissances et la rapidité des participant·es.</div></div>
+          <div class="comp-card"><div class="comp-tag">Culturelle</div><div class="comp-icon">🎤</div><div class="comp-name">Improvisations</div><div class="comp-desc">Des défis spontanés où créativité, écoute et esprit d'équipe sont essentiels.</div></div>
+          <div class="comp-card"><div class="comp-tag">Culturelle</div><div class="comp-icon">⚖️</div><div class="comp-name">Débats oratoires</div><div class="comp-desc">Des joutes argumentatives où les participant·es défendent leurs idées avec rigueur et éloquence.</div></div>
+        </div>
+      </div>
+
+      <!-- ── VOLET 5 : COMPÉTITIONS SPORTIVES ──────────────── -->
+      <div class="volet-block">
+        <div class="volet-header">
+          <div class="volet-titre">🏅 Compétitions sportives</div>
+          <p class="volet-desc">Les compétitions sportives offrent l'occasion aux participant·es de se dépasser dans un contexte dynamique. Elles renforcent également l'esprit d'équipe et la camaraderie entre les délégations.</p>
+        </div>
+        <div class="competitions-grid competitions-grid-5">
+          <div class="comp-card"><div class="comp-icon">🏃</div><div class="comp-name">Sport intérieur</div></div>
+          <div class="comp-card"><div class="comp-icon">🌳</div><div class="comp-name">Sport extérieur</div></div>
+          <div class="comp-card"><div class="comp-icon">🎉</div><div class="comp-name">Sport surprise</div></div>
+          <div class="comp-card"><div class="comp-icon">🏊</div><div class="comp-name">Sport piscine</div></div>
+          <div class="comp-card"><div class="comp-icon">🎮</div><div class="comp-name">E-sport</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 4 — PROFIL PARTICIPANTS ═══════════════════ -->
+  <section id="delegation" class="section section-dark">
+    <div class="container">
+      <div class="profil-grid">
+        <div>
+          <div class="section-tag on-dark">Notre délégation</div>
+          <h2 class="section-title" style="color:white;margin-bottom:20px">23 futurs ingénieurs<br>de l'Outaouais</h2>
+          <p class="section-subtitle on-dark" style="margin-bottom:36px">Une équipe diversifiée, représentant 4 disciplines du génie à l'UQO.</p>
+          <div class="disciplines-list">
+            <div class="disc-item"><div class="disc-dot"></div><div class="disc-name">Génie informatique</div><div class="disc-bar-wrap"><div class="disc-bar" style="width:45%"></div></div><div class="disc-pct">45%</div></div>
+            <div class="disc-item"><div class="disc-dot"></div><div class="disc-name">Génie électrique</div><div class="disc-bar-wrap"><div class="disc-bar" style="width:30%"></div></div><div class="disc-pct">30%</div></div>
+            <div class="disc-item"><div class="disc-dot"></div><div class="disc-name">Génie civil</div><div class="disc-bar-wrap"><div class="disc-bar" style="width:15%"></div></div><div class="disc-pct">15%</div></div>
+            <div class="disc-item"><div class="disc-dot"></div><div class="disc-name">Génie industriel</div><div class="disc-bar-wrap"><div class="disc-bar" style="width:10%"></div></div><div class="disc-pct">10%</div></div>
+          </div>
+          <div class="profil-stats">
+            <div class="profil-stat"><div class="profil-stat-num">23</div><div class="profil-stat-label">Participants</div></div>
+            <div class="profil-stat"><div class="profil-stat-num">4</div><div class="profil-stat-label">Disciplines</div></div>
+            <div class="profil-stat"><div class="profil-stat-num">~570$</div><div class="profil-stat-label">/ étudiant financé</div></div>
+            <div class="profil-stat"><div class="profil-stat-num">5j</div><div class="profil-stat-label">À Québec</div></div>
+          </div>
+        </div>
+        <div class="photos-mosaic">
+          <div class="photo-cell tall"><img src="img/groupe.jpg" alt="Délégation UQO JDG 2026"></div>
+          <div class="photo-cell"><img src="img/sport.jpg" alt="Compétition sportive JDG 2026"></div>
+          <div class="photo-cell"><img src="img/travail.jpg" alt="Compétition technique JDG 2026"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 4.5 — THÉMATIQUE & PILIERS DE L'ÉVÉNEMENT ═ -->
+  <section id="thematique" class="section">
+    <div class="container">
+
+      <!-- Thématique -->
+      <div class="thematique-grid">
+        <div class="thematique-text">
+          <div class="section-tag">Thématique</div>
+          <h2 class="section-title" style="margin-bottom:8px">Libère ton génie</h2>
+          <p>Et si le génie n'était pas une qualité réservée à quelques privilégiés, mais une force que chacun peut choisir de faire émerger ?</p>
+          <p>En génie, la moindre idée, même la plus modeste en apparence, peut devenir le point de départ d'une solution qui change les choses. Il suffit d'avoir le courage de l'approfondir, de la faire évoluer et de la concrétiser. C'est précisément à la croisée de la <strong>créativité et de la rigueur</strong> que prennent forme les projets qui redéfinissent notre quotidien.</p>
+          <p>Sous le thème « <strong>Libère ton génie</strong> », l'édition 2027 des Jeux de Génie devient un espace où chacun est encouragé à <strong>quitter ses repères habituels, à oser et à croire en son propre potentiel</strong>. L'objectif ne se limite pas à la performance : il s'agit avant tout d'explorer ce qu'on est capable d'accomplir quand on ose voir les choses autrement.</p>
+          <p>Qu'elle se manifeste dans des défis techniques exigeants, dans la collaboration entre équipes ou dans des éclairs de créativité spontanés, chaque personne participante nourrit une dynamique collective propice à l'innovation. Libérer son génie, c'est <strong>se permettre d'expérimenter, de créer et d'accepter l'échec comme partie du processus</strong>, dans le but ultime de bâtir quelque chose qui dépasse l'individu.</p>
+        </div>
+        <div class="thematique-photos">
+          <img src="img/majeure.jpg" alt="Ambiance Jeux de Génie">
+          <img src="img/culturelle.jpg" alt="Compétition culturelle">
+          <img src="img/capitale.jpg" alt="Compétition La Capitale">
+        </div>
+      </div>
+
+      <!-- Piliers de l'événement -->
+      <div class="piliers-event-header">
+        <div class="section-tag" style="justify-content:center">Nos valeurs</div>
+        <h2 class="section-title">Les piliers des Jeux<br>de Génie 2027</h2>
+        <p class="section-subtitle">Les Jeux de Génie 2027 s'appuient sur des valeurs fondamentales qui orientent chaque aspect de l'expérience et donnent tout son sens à notre thème « Libère ton génie ». <strong>Inspiration, Partage, Appartenance et Dépassement</strong> constituent les fondations de cette édition et rassemblent notre communauté autour d'une vision commune.</p>
+      </div>
+
+      <div class="piliers-event-list">
+        <div class="pilier-event-row">
+          <div class="pilier-event-photo"><img src="img/culturelle.jpg" alt="Inspiration"></div>
+          <div class="pilier-event-text">
+            <div class="pilier-event-name">✨ Inspiration</div>
+            <p class="pilier-event-desc">Stimuler la créativité et favoriser l'apparition d'idées nouvelles, en offrant à chacun l'impulsion dont il a besoin pour aller au-delà de ses propres limites.</p>
+          </div>
+        </div>
+        <div class="pilier-event-row reverse">
+          <div class="pilier-event-photo"><img src="img/travail.jpg" alt="Partage"></div>
+          <div class="pilier-event-text">
+            <div class="pilier-event-name">🤝 Partage</div>
+            <p class="pilier-event-desc">Encourager le partage des savoirs, des expériences et des points de vue pour progresser collectivement.</p>
+          </div>
+        </div>
+        <div class="pilier-event-row">
+          <div class="pilier-event-photo"><img src="img/groupe.jpg" alt="Appartenance"></div>
+          <div class="pilier-event-text">
+            <div class="pilier-event-name">🫂 Appartenance</div>
+            <p class="pilier-event-desc">Bâtir un véritable esprit de communauté où chaque participant se sent à sa place et participe à une expérience collective hors du commun.</p>
+          </div>
+        </div>
+        <div class="pilier-event-row reverse">
+          <div class="pilier-event-photo"><img src="img/majeure.jpg" alt="Dépassement"></div>
+          <div class="pilier-event-text">
+            <div class="pilier-event-name">🚀 Dépassement</div>
+            <p class="pilier-event-desc">Se dépasser, quitter sa zone de confort et donner accès à son plein potentiel, tant sur le plan individuel qu'en équipe.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- ══ BANDEAU — VOTRE IMPACT ════════════════════════════ -->
+<section class="impact-banner">
+  <div class="container">
+    <div class="impact-content">
+      <div class="impact-tag">Votre impact</div>
+      <p class="impact-text">
+        Devenir partenaire des Jeux de Génie, c'est saisir une occasion concrète de démontrer votre engagement envers la relève en ingénierie. En appuyant des activités qui dépassent le cadre strictement académique, vous participez activement à l'épanouissement professionnel et personnel des étudiant·es.
+      </p>
+      <p class="impact-text">
+        Notre mission consiste à bâtir un lien durable entre votre organisation et la communauté étudiante en génie, issue de trois provinces. Joignez-vous à nous pour construire, ensemble et pierre par pierre, des relations qui ont du sens.
+      </p>
+      <p class="impact-text impact-text-last">
+        Dans un esprit de transparence, vous trouverez ci-dessous un aperçu de nos prévisions de dépenses et de revenus.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- ══ SECTION 5 — NOTRE VISION ══════════════════════════ -->
+  <section id="vision" class="section">
+    <div class="container">
+      <div class="vision-header">
+        <div class="section-tag" style="justify-content:center">Pourquoi nous soutenir</div>
+        <h2 class="section-title">4 raisons concrètes de<br>devenir partenaire</h2>
+        <p class="section-subtitle">En soutenant la délégation UQO, votre entreprise s'associe à une aventure humaine et académique unique.</p>
+      </div>
+      <div class="piliers-grid">
+        <div class="pilier-card p1"><div class="pilier-num">1</div><div class="pilier-icon">🌟</div><div class="pilier-title">Visibilité auprès des futurs ingénieurs</div><div class="pilier-desc">Votre logo sur nos équipements, banderoles et communications numériques atteint directement les étudiants en génie — vos employés de demain.</div></div>
+        <div class="pilier-card p2"><div class="pilier-num">2</div><div class="pilier-icon">🤝</div><div class="pilier-title">Rayonnement régional</div><div class="pilier-desc">Associez votre marque à la fierté de l'Outaouais en génie. Une délégation visible à Québec et dans tous les réseaux professionnels de la région.</div></div>
+        <div class="pilier-card p3"><div class="pilier-num">3</div><div class="pilier-icon">💼</div><div class="pilier-title">Accès au vivier de talents</div><div class="pilier-desc">Rencontrez directement les participants lors de nos activités partenaires. Une occasion unique de recruter des étudiants motivés et compétitifs.</div></div>
+        <div class="pilier-card p4"><div class="pilier-num">4</div><div class="pilier-icon">🏆</div><div class="pilier-title">Responsabilité sociale</div><div class="pilier-desc">Investir dans l'éducation des futurs ingénieurs, c'est contribuer au développement économique et technologique du Québec.</div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ SECTION 6 — BUDGET ════════════════════════════════ -->
+  <section id="budget" class="section section-alt">
+    <div class="container">
+      <div class="budget-grid">
+        <div>
+          <div class="section-tag">Budget prévisionnel</div>
+          <h2 class="section-title">Comment votre soutien<br>est utilisé</h2>
+          <p class="section-subtitle">Un budget total de 61 000 $ équilibré entre dépenses et sources de financement.</p>
+          <div class="budget-legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#1A5CD4"></div><div class="legend-label">Inscription & frais officiels</div><div class="legend-amount">18 000 $</div><div class="legend-pct">30%</div></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#E87722"></div><div class="legend-label">Transport & hébergement</div><div class="legend-amount">21 000 $</div><div class="legend-pct">34%</div></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#2B70E8"></div><div class="legend-label">Équipements & matériel</div><div class="legend-amount">12 000 $</div><div class="legend-pct">20%</div></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#FF8C2A"></div><div class="legend-label">Communication & promotion</div><div class="legend-amount">6 000 $</div><div class="legend-pct">10%</div></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#8A9BC7"></div><div class="legend-label">Activités & divers</div><div class="legend-amount">4 000 $</div><div class="legend-pct">6%</div></div>
+          </div>
+          <div class="budget-total-bar">
+            <div><div class="label">Budget total prévisionnel</div><div class="sublabel">dont 38 000 $ en partenariats visés</div></div>
+            <div class="amount">61 000 $</div>
+          </div>
+        </div>
+        <div class="budget-chart-wrap">
+          <canvas id="budgetChart"></canvas>
+          <div class="budget-center-text">
+            <div class="total">61 000 $</div>
+            <div class="label">Budget total</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 7 — GRILLE PARTENARIAT ═══════════════════ -->
+  <section id="partenariat" class="section">
+    <div class="container">
+      <div class="niveaux-header">
+        <div class="section-tag" style="justify-content:center">Grille de partenariat</div>
+        <h2 class="section-title">7 niveaux pour<br>tous les engagements</h2>
+        <div class="niveaux-equiv">💡 Chaque tranche de 570 $ finance intégralement 1 étudiant</div>
+      </div>
+      <div class="niveaux-grid">
+        <div class="niveau-card ami"><div class="niveau-medal">🤎</div><div class="niveau-name">Ami</div><div class="niveau-prix">500 $+</div><div class="niveau-sub">À partir de</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Mention sur réseaux sociaux</li><li>Logo sur supports numériques</li><li>Remerciements officiels</li></ul></div>
+        <div class="niveau-card bronze"><div class="niveau-medal">🥉</div><div class="niveau-name">Bronze</div><div class="niveau-prix">1 000 $+</div><div class="niveau-sub">À partir de</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Logo sur uniforme de compétition</li><li>Mention dans le cahier</li><li>Post dédié sur réseaux</li><li>Certificat de partenariat</li></ul></div>
+        <div class="niveau-card argent"><div class="niveau-medal">🥈</div><div class="niveau-name">Argent</div><div class="niveau-prix">2 500 $+</div><div class="niveau-sub">À partir de</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Logo grand format sur uniforme</li><li>Bannière lors des compétitions</li><li>Publication mensuelle</li><li>Invitation à nos événements</li></ul></div>
+        <div class="niveau-card or"><div class="niveau-medal">🥇</div><div class="niveau-name">Or</div><div class="niveau-prix">4 000 $+</div><div class="niveau-sub">À partir de</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Logo premium sur toutes surfaces</li><li>Stand lors de nos activités</li><li>Accès au vivier de talents</li><li>Contenus co-brandés</li></ul></div>
+      </div>
+      <div class="niveaux-grid-2">
+        <div class="niveau-card platine"><div class="niveau-medal">🔮</div><div class="niveau-name">Platine</div><div class="niveau-prix">6 000 $+</div><div class="niveau-sub">À partir de</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Tous les avantages Or</li><li>Logo sur banderoles officielles</li><li>Présentation aux participants</li><li>Atelier de recrutement exclusif</li></ul></div>
+        <div class="niveau-card diamant"><div class="niveau-badge-impact">Impact Communautaire</div><div class="niveau-medal">💎</div><div class="niveau-name">Diamant</div><div class="niveau-prix">10 000 $+</div><div class="niveau-sub">À partir de</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Tous les avantages Platine</li><li>Exclusivité de secteur</li><li>Droit de nommage sur un événement</li><li>Badge « Impact Communautaire »</li></ul></div>
+        <div class="niveau-card presentateur"><div class="niveau-medal">👑</div><div class="niveau-name">Présentateur</div><div class="niveau-prix">20 000 $+</div><div class="niveau-sub">Niveau maximum · Exclusif</div><div class="niveau-divider"></div><ul class="niveau-perks"><li>Tous les avantages Diamant</li><li>Co-branding de la délégation</li><li>Discours lors de la cérémonie</li><li>Partenariat stratégique UQO</li><li>Visibilité nationale (JDG)</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 8 — PARTENARIAT MATÉRIEL ══════════════════ -->
+  <section id="materiel" class="section section-dark">
+    <div class="container">
+      <div class="materiel-content">
+        <div class="materiel-intro">
+          <div class="section-tag on-dark">Partenariat matériel</div>
+          <h2 class="section-title" style="color:white">Contribuez en nature,<br>pas seulement en argent</h2>
+          <p class="section-subtitle on-dark">Les dons en nature sont les bienvenus et peuvent être équivalents à un niveau de partenariat financier selon leur valeur marchande.</p>
+          <div class="materiel-examples">
+            <div class="mat-item"><div class="mat-icon">👕</div><div class="mat-text"><div class="title">Équipements & vêtements</div><div class="desc">Uniformes, casques, équipements de compétition</div></div></div>
+            <div class="mat-item"><div class="mat-icon">🍕</div><div class="mat-text"><div class="title">Restauration & traiteur</div><div class="desc">Repas, collations pour l'équipe à Québec</div></div></div>
+            <div class="mat-item"><div class="mat-icon">🖨️</div><div class="mat-text"><div class="title">Impression & signalétique</div><div class="desc">Bannières, affiches, kakémonos, cahiers</div></div></div>
+            <div class="mat-item"><div class="mat-icon">🏨</div><div class="mat-text"><div class="title">Hébergement & transport</div><div class="desc">Hôtel, minibus, déplacements</div></div></div>
+            <div class="mat-item"><div class="mat-icon">💻</div><div class="mat-text"><div class="title">Matériel informatique</div><div class="desc">Logiciels, licences, équipements électroniques</div></div></div>
+          </div>
+        </div>
+        <div class="materiel-cta-card">
+          <div class="title">Un don sur mesure ?</div>
+          <div class="desc">Vous avez une offre spécifique qui ne correspond pas à nos niveaux ? Contactez-nous directement — nous étudions toutes les propositions avec intérêt.</div>
+          <a href="#contacts" class="btn-primary">Discuter d'un partenariat →</a>
+          <div class="mat-divider"></div>
+          <div class="mat-note">💡 <strong>Rappel :</strong> Chaque don de 570 $ finance intégralement la participation d'un étudiant.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 9 — CONTREPARTIES ════════════════════════ -->
+  <section id="contreparties" class="section section-alt">
+    <div class="container">
+      <div class="section-tag">Tableau des contreparties</div>
+      <h2 class="section-title">Ce que vous obtenez<br>selon votre niveau</h2>
+      <p class="section-subtitle">Détail complet des avantages par niveau de partenariat.</p>
+      <div class="contreparties-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:240px">Contrepartie</th>
+              <th class="th-ami">Ami<br><small>500$+</small></th>
+              <th class="th-bronze">Bronze<br><small>1k$+</small></th>
+              <th class="th-argent">Argent<br><small>2.5k$+</small></th>
+              <th class="th-or">Or<br><small>4k$+</small></th>
+              <th class="th-platine">Platine<br><small>6k$+</small></th>
+              <th class="th-diamant">Diamant<br><small>10k$+</small></th>
+              <th class="th-pres">Prés.<br><small>20k$+</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="td-feature">Mention réseaux sociaux<small>Post(s) de remerciement</small></td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Logo supports numériques<small>Site web, médias sociaux</small></td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Logo sur uniforme<small>Compétition officielle</small></td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Mention dans le cahier</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Bannière lors des compétitions</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Invitation à nos événements</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Stand lors de nos activités</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Accès vivier de talents</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Logo banderoles officielles</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Atelier de recrutement</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Exclusivité de secteur</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Nommage d'un événement</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Co-branding délégation</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Discours cérémonie officielle</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td></tr>
+            <tr><td class="td-feature">Partenariat stratégique UQO</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-no">–</td><td class="td-check check-yes">✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 10 — CONTACTS ══════════════════════════════ -->
+  <section id="contacts" class="section">
+    <div class="container">
+      <div class="section-tag">Nous contacter</div>
+      <h2 class="section-title">Prêt à devenir<br>partenaire ?</h2>
+      <p class="section-subtitle">Contactez nos VP Partenariats pour toute question, offre ou confirmation. Nous répondons dans les 48 heures.</p>
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <div class="contact-avatar">DB</div>
+          <div><div class="contact-name">Dakin Blair Noubouossie</div><div class="contact-role">VP Partenariats — Délégation UQO JDG 2027</div></div>
+          <div class="contact-links">
+            <a href="mailto:partenariats.jdg@uqo.ca" class="contact-link"><div class="contact-link-icon">✉️</div>partenariats.jdg@uqo.ca</a>
+            <a href="https://www.uqo.ca" class="contact-link" target="_blank"><div class="contact-link-icon">🌐</div>uqo.ca</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-avatar">WD</div>
+          <div><div class="contact-name">William Dikapa Youkna</div><div class="contact-role">VP Partenariats — Délégation UQO JDG 2027</div></div>
+          <div class="contact-links">
+            <a href="mailto:partenariats.jdg@uqo.ca" class="contact-link"><div class="contact-link-icon">✉️</div>partenariats.jdg@uqo.ca</a>
+            <a href="https://www.uqo.ca" class="contact-link" target="_blank"><div class="contact-link-icon">🌐</div>uqo.ca</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-bar">
+        <div class="info-bar-item"><div class="label">Institution</div><div class="value">Université du Québec en Outaouais</div></div>
+        <div class="info-bar-sep"></div>
+        <div class="info-bar-item"><div class="label">Courriel partenariats</div><div class="value orange">partenariats.jdg@uqo.ca</div></div>
+        <div class="info-bar-sep"></div>
+        <div class="info-bar-item"><div class="label">Événement</div><div class="value">3 – 7 janvier 2027, Québec</div></div>
+        <div class="info-bar-sep"></div>
+        <div class="info-bar-item"><div class="label">Budget partenariats visé</div><div class="value orange">38 000 $</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-left">
+      <img src="logo.png" alt="Logo JDG UQO" style="width:32px;height:32px;object-fit:contain;background:rgba(255,255,255,0.95);border-radius:7px;padding:3px;">
+      <span>© 2027 Délégation UQO — Jeux de Génie</span>
+    </div>
+    <span>2026 Gatineau, Québec</span>
+  </footer>
+
+  <button id="scrollTop" aria-label="Retour en haut">↑</button>
+
+  <!-- Chart.js (seule dépendance externe) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <!-- Notre JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
