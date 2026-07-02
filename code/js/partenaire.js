@@ -87,13 +87,14 @@ function initGraphiqueBudget() {
       labels: [
         'Inscription & frais',
         'Transport & hébergement',
-        'Équipements & matériel',
+        'Équipements',
+        'Matériels',
         'Communication',
         'Activités & divers'
       ],
       datasets: [{
-        data: [18000, 21000, 12000, 6000, 4000],
-        backgroundColor: ['#1A5CD4', '#E87722', '#2B70E8', '#FF8C2A', '#8A9BC7'],
+        data: [14000, 2000, 8000, 5000, 3000, 4000],
+        backgroundColor: ['#1A5CD4', '#E87722', '#2B70E8', '#8CAEEA','#FF8C2A', '#8A9BC7'],
         borderWidth: 0,
         hoverOffset: 8
       }]
