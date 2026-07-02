@@ -27,6 +27,8 @@ body {
   color: var(--texte);
   background: var(--blanc);
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
 }
 
 /* ── UTILITAIRES ───────────────────────────────────────────── */
@@ -891,8 +893,8 @@ nav {
   color: var(--bleu);
   font-weight: 600;
 }
-.niveaux-grid   { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.niveaux-grid-2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+.niveaux-grid   { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;}
+.niveaux-grid-2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px;}
 
 .niveau-card {
   border-radius: 20px;
@@ -906,19 +908,11 @@ nav {
 }
 .niveau-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
 
-.niveau-card.ami         { background: #FFF8F3; border-color: #F5D0A9; }
-.niveau-card.bronze      { background: #FFF5EE; border-color: #CD7F32; }
-.niveau-card.argent      { background: #F8F9FA; border-color: #9E9E9E; }
-.niveau-card.or          { background: #FFFDF0; border-color: #D4AF37; }
-.niveau-card.platine     { background: #F0F4FF; border-color: #8A9BC7; }
-.niveau-card.diamant     { background: #F0F8FF; border-color: #5BC8F5; }
-.niveau-card.presentateur {
-  background: linear-gradient(135deg, #0A1F4E, #1A3A7A);
-  border-color: var(--orange);
-  color: var(--blanc);
-}
-.niveau-card.presentateur .niveau-perks li { color: rgba(255,255,255,0.8); }
-.niveau-card.presentateur .niveau-sub     { color: rgba(255,255,255,0.6); }
+.niveau-card.ami         { background: #FAE8D4; border-color: #F5D0A9; }
+.niveau-card.bronze      { background: #E6C07A; border-color: #CD7F32; }
+.niveau-card.argent      { background: #CFCFCF; border-color: #9E9E9E; }
+.niveau-card.or          { background: #E9D79B; border-color: #D4AF37; }
+.niveau-card.platine     { background: #C4CDE3; border-color: #8A9BC7; }
 
 .niveau-medal  { font-size: 32px; }
 .niveau-name   { font-size: 18px; font-weight: 800; }
